@@ -1,1 +1,45 @@
- 
+#reset, #submit {
+    cursor: pointer;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background: #56baed;
+  }
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+}
+.baner{
+    background-color: rgba(232, 234, 237, 1);
+    border-radius: 0 0 20% 20%;
+    border-style: none none solid none;
+    border-width: 5px;
+    text-align: center;
+    position: fixed;
+    padding-left: 40%;
+    padding-right: 40%;
+}
+.powitanie{
+    padding-bottom: 10%;
+}
+.main{
+    background-color: rgba(232, 234, 237, 1);
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 4%;
+    padding-top: 3%;
+    text-align: center;
+    border-style: solid;
+    border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
+    border-width: 3px;
+    opacity: 0.97;
+    border-radius: 5% 5% 20% 20%;
+    position: fixed;
+}
