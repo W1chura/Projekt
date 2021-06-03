@@ -9,6 +9,7 @@ body {
   position: absolute;
   border-radius: 100%;
   opacity: 0.7;
+  z-index: 0;
 }
 .baner{
     background-color: rgba(232, 234, 237, 1);
@@ -19,6 +20,7 @@ body {
     position: fixed;
     padding-left: 40%;
     padding-right: 40%;
+    z-index: 9;
 }
 .main{
     background-color: rgba(232, 234, 237, 1);
@@ -32,6 +34,7 @@ body {
     border-width: 3px;
     opacity: 0.97;
     position: fixed;
+    z-index: 10;
 }
 .gif{
   margin-bottom: 10%;
