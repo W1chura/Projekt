@@ -1,12 +1,15 @@
-
 body {
-    background-color: rgb(42, 40, 51);
-  }
-  .ball {
-    position: absolute;
-    border-radius: 100%;
-    opacity: 0.7;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background: #56baed;
+}
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+}
 
 .panel {
   border-radius: 20%;
@@ -302,13 +305,7 @@ audio:nth-child(6) {
     background-color: rgb(0, 241, 209);
   }
 }
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  background: #56baed;
-}
+
 ::selection {
   color: #fff;
   background: #56baed;

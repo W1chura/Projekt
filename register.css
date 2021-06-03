@@ -1,1 +1,32 @@
- 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background: #56baed;
+  }
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+}
+.baner{
+    background-color: rgba(232, 234, 237, 1);
+    border-radius: 20%;
+    text-align: center;
+    position: fixed;
+    padding-left: 40%;
+    padding-right: 40%;
+}
+.main{
+    background-color: rgba(232, 234, 237, 1);
+    margin-left: 37%;
+    margin-right: 37%;
+    margin-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    border-radius: 25px;
+    opacity: 0.97;
+    position: fixed;
+}
