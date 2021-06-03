@@ -61,7 +61,7 @@ function login() {
         alert(email + " yor are logged in now \n welcome to our website.");
         document.getElementById("se").value = "";
         document.getElementById("sp").value = "";
-        window.location.assign("./projektHTML.html");
+        window.location.assign("./main.html");
         localStorage.setItem("stan", 1);
         return;
     }
