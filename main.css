@@ -12,14 +12,19 @@ body {
   z-index: 1;
 }
 
-.panel {
+.baner {
   border-radius: 20%;
   background-color: rgb(255, 255, 255);
   text-align: center;
+  z-index: 2;
+  border-radius: 0 0 20% 20%;
+  border-style: none none solid none;
+  border-width: 5px;
 }
 
 .muzyka {
   margin-top: 60%;
+  z-index: 3;
 }
 
 .pepejam {
@@ -319,6 +324,7 @@ audio:nth-child(6) {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.3s ease;
+  z-index: 3;
 }
 .select-box {
   background: #fff;
