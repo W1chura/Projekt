@@ -1,8 +1,10 @@
 function register() {
     event.preventDefault();
-    var email = document.getElementById("re").value;
-    var password = document.getElementById("rp").value;
-    var passwordRetype = document.getElementById("rrp").value;
+    var fname = document.getElementById("fname").value
+    var sname = document.getElementById("sname").value
+    var email = document.getElementById("re").value
+    var password = document.getElementById("rp").value
+    var passwordRetype = document.getElementById("rrp").value
 
 
     if (email == "") {
@@ -27,6 +29,9 @@ function register() {
         var haslo = document.getElementById("rrp").value;
         localStorage.setItem("nazwa", nazwa)
         localStorage.setItem("haslo", haslo)
+        localStorage.setItem("fname", fname)
+        localStorage.setItem("sname", sname)
+        localStorage.setItem("email", email)
         document.getElementById("re").value = "";
         document.getElementById("rp").value = "";
         document.getElementById("rrp").value = "";
@@ -57,7 +62,7 @@ function login() {
         alert("Password does not match.");
         return;
     }
-    else{
+    else {
         alert(email + " yor are logged in now \n welcome to our website.");
         document.getElementById("se").value = "";
         document.getElementById("sp").value = "";

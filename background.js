@@ -30,7 +30,7 @@ balls.forEach((el, i, ra) => {
             { transform: `translate(${to.x}rem, ${to.y}rem)` }
         ],
         {
-            duration: (Math.random() + 1) * 2000,
+            duration: (Math.random() + 1) * 10000,
             direction: "alternate",
             fill: "both",
             iterations: Infinity,

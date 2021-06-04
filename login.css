@@ -1,19 +1,22 @@
 #reset, #submit {
     cursor: pointer;
   }
-body {
-    margin: 0;
-    padding: 0;
+  * {
+    font-family: Arial;
+  }
+  body {
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     background: #56baed;
+    height: 100px;
+    margin: 0 auto;
   }
-.ball {
-  position: absolute;
-  border-radius: 100%;
-  opacity: 0.7;
-  z-index: 1;
-}
+  .ball {
+    position: fixed;
+    border-radius: 100%;
+    opacity: 0.7;
+    z-index: 0;
+  }
 .baner{
     background-color: rgba(232, 234, 237, 1);
     border-radius: 0 0 20% 20%;
