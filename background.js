@@ -1,7 +1,7 @@
 
 const colors = ["#ff3300", "#ff9900", "#ffffff", "#1affff", "#0073e6"];
 
-const numBalls = 200;
+const numBalls = 1000;
 const balls = [];
 
 for (let i = 0; i < numBalls; i++) {
