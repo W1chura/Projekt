@@ -32,22 +32,19 @@
     padding-bottom: 2%;
 }
 .main{
-    background-color: rgba(232, 234, 237, 1);
-    margin-left: 40%;
-    margin-right: 40%;
-    margin-top: 15%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 4%;
-    padding-top: 3%;
-    text-align: center;
-    border-style: solid;
-    border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
-    border-width: 3px;
-    opacity: 0.97;
-    border-radius: 5% 5% 20% 20%;
-    position: fixed;
-    z-index: 3;
+  background-color: rgba(232, 234, 237, 1);
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 13%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  border-radius: 25px;
+  border-width: 3px;
+  opacity: 0.97;
+  position: fixed;
+  z-index: 10;
 }
 .gif{
     margin-bottom: 15%;
