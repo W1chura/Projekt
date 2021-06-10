@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script defer src="./rl.js"></script>
+    <script defer src="./background.js"></script>
+    <link rel="stylesheet" href="./login.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Fajne Gry</title>
+  </head>
+
+  <body>
+    <nav>
+      <div id="ball"></div>
+    </nav>
+    <main>
+      <div class="baner">
+        <h1>Tutaj możesz się zalogować na swoje konto</h1>
+      </div>
+      <div id="error"></div>
+      <div class="main">
+        <h1 class="powitanie">Serdecznie zapraszamy</h1>
+        <br />
+        <div class="gif">
+          <a
+            class="pengu"
+            href="https://tenor.com/view/club-pls-clubpenguin-pepe-pls-gif-18216735"
+            ><img src="./pengu.gif" width="64px" height="64px" alt="penguDance"
+          /></a>
+        </div>
+        <form id="form" action="/" method="GET">
+          <label for="login">Login/E-mail:</label><br />
+          <input type="text" id="se" name="loginq" required /><br />
+          <label for="password">Hasło:</label><br />
+          <input
+            type="password"
+            id="sp"
+            name="passwordq"
+            required
+          /><br /><br />
+          <button type="reset" id="reset">Zresetuj hasło</button>
+          <button type="submit" id="submit" onclick="login()">Zaloguj</button
+          ><br /><br />
+        </form>
+      </div>
+    </main>
+    <footer>Stronę stworzył: Maciej Gniedziejko - 54455</footer>
+  </body>
+</html>
