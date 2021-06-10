@@ -5,26 +5,32 @@ function register() {
     var email = document.getElementById("re").value
     var password = document.getElementById("rp").value
     var passwordRetype = document.getElementById("rrp").value
-
-
-    if (email == "") {
-        alert("Email required.");
+    if (fname == "") {
+        alert("Imię jest wymagane.");
+        return;
+    }
+    else if (sname == "") {
+        alert("Nazwisko jest wymagane.");
+        return;
+    }
+    else if (email == "") {
+        alert("E-mail jest wymagany.");
         return;
     }
     else if (password == "") {
-        alert("Password required.");
+        alert("Hasło jest wymagane.");
         return;
     }
     else if (passwordRetype == "") {
-        alert("Password required.");
+        alert("Należy powtórzyć hasło.");
         return;
     }
     else if (password != passwordRetype) {
-        alert("Password don't match retype your Password.");
+        alert("Podane hasła nie są identyczne.");
         return;
     }
     else {
-        alert(email + "  Thanks for registration. \nTry to login Now");
+        alert(email + "  Dziękujemy za rejestracje. \nTeraz możesz się zalogować");
         var nazwa = document.getElementById("re").value;
         var haslo = document.getElementById("rrp").value;
         localStorage.setItem("nazwa", nazwa)
@@ -48,22 +54,22 @@ function login() {
     var password = document.getElementById("sp").value;
     if (email != nazwa2) {
         if (email == "") {
-            alert("Email required.");
+            alert("E-mail jest wymagany.");
             return;
         }
-        alert("Email does not exist.");
+        alert("Podany adres E-mail nie istnieje.");
         return;
     }
     else if (password != haslo2) {
         if (password == "") {
-            alert("Password required.");
+            alert("Hasło jest wymagane");
             return;
         }
-        alert("Password does not match.");
+        alert("Podane hasło jest niepoprawne.");
         return;
     }
     else {
-        alert(email + " yor are logged in now \n welcome to our website.");
+        alert(email + " Udało się! \n Witaj na naszej stronie.");
         document.getElementById("se").value = "";
         document.getElementById("sp").value = "";
         window.location.assign("./main.html");
@@ -78,13 +84,13 @@ function forgot() {
 
     if (emailArray.indexOf(email) == -1) {
         if (email == "") {
-            alert("Email required.");
+            alert("E-mail jest wymagany.");
             return;
         }
-        alert("Email does not exist.");
+        alert("Podany adres E-mail nie istnieje.");
         return;
     }
 
-    alert("email is send to your email check it in 24hr. \n Thanks");
+    alert("Na podany adres zostanie wysłana wiadomość e-mail z dalszymi instrukcjami. \n Dziękujemy");
     document.getElementById("fe").value = "";
 }

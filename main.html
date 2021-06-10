@@ -7,23 +7,33 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Fajne Gry</title>
     <script>
-      let stan = localStorage.getItem("stan")
-      let nazwa = localStorage.getItem("nazwa")
-      let email = localStorage.getItem("email")
-      let fname = localStorage.getItem("fname")
-      let sname = localStorage.getItem("sname")
+      let stan = localStorage.getItem("stan");
+      let nazwa = localStorage.getItem("nazwa");
+      let email = localStorage.getItem("email");
+      let fname = localStorage.getItem("fname");
+      let sname = localStorage.getItem("sname");
       function teleport1() {
-        window.location.assign("./register.html")
+        window.location.assign("./register.html");
       }
       function teleport2() {
-        window.location.assign("./login.html")
+        window.location.assign("./login.html");
       }
-      function logout(){
-          localStorage.setItem("stan", 0)
-          window.location.assign("./main.html")
+      function logout() {
+        localStorage.setItem("stan", 0);
+        window.location.assign("./main.html");
       }
-      function zalogowanoJako(){
-          alert("Dane tego konta: "+"\nLogin: " +nazwa + "\nImię: "+fname+"\nNazwisko: "+sname+"\nE-mail: "+email)
+      function zalogowanoJako() {
+        alert(
+          "Dane tego konta: " +
+            "\nLogin: " +
+            nazwa +
+            "\nImię: " +
+            fname +
+            "\nNazwisko: " +
+            sname +
+            "\nE-mail: " +
+            email
+        );
       }
     </script>
   </head>
@@ -41,24 +51,36 @@
         </a>
         <h1 id="powitanko"></h1>
         <script>
-        if (stan == 1) {
-            document.getElementById("powitanko").innerHTML = "Witaj " + nazwa +" na mojej stronie"
-            var guzik1 = document.getElementById("guzik1")
-            guzik1.innerHTML = "Wyloguj"
-            guzik1.onclick = function () {logout()}
-            var guzik2 = document.getElementById("guzik2")
-            guzik2.innerHTML = nazwa
-            guzik2.onclick = function (){zalogowanoJako()}
-		}
-		if (stan == 0) {
-            document.getElementById("powitanko").innerHTML = "Witaj na mojej stronie";
-            var guzik1 = document.getElementById("guzik1")
-            guzik1.innerHTML = "Rejestracja"
-            guzik1.onclick = function () {teleport1()}
-            var guzik2 = document.getElementById("guzik2")
-            guzik2.innerHTML = "Logowanie"
-            guzik2.onclick = function (){teleport2()}
-		}
+          if (stan == 1) {
+            var powitankojs = document.getElementById("powitanko");
+            powitankojs.innerHTML = "Witaj " + nazwa + " na mojej stronie";
+            powitankojs.style.paddingLeft = "17%";
+            var guzik1 = document.getElementById("guzik1");
+            guzik1.innerHTML = "Wyloguj";
+            guzik1.onclick = function () {
+              logout();
+            };
+            var guzik2 = document.getElementById("guzik2");
+            guzik2.innerHTML = nazwa;
+            guzik2.onclick = function () {
+              zalogowanoJako();
+            };
+          }
+          if (stan == 0) {
+            var powitankojs = document.getElementById("powitanko");
+            powitankojs.innerHTML = "Witaj na mojej stronie";
+            powitankojs.style.paddingLeft = "16%";
+            var guzik1 = document.getElementById("guzik1");
+            guzik1.innerHTML = "Rejestracja";
+            guzik1.onclick = function () {
+              teleport1();
+            };
+            var guzik2 = document.getElementById("guzik2");
+            guzik2.innerHTML = "Logowanie";
+            guzik2.onclick = function () {
+              teleport2();
+            };
+          }
         </script>
       </div>
       <div class="select-box">
@@ -195,6 +217,6 @@
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>Stronę stworzył: Maciej Gniedziejko - 54455</footer>
   </body>
 </html>

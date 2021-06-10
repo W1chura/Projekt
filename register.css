@@ -1,6 +1,15 @@
 * {
   font-family: Arial;
 }
+footer{
+  position: absolute;
+  background-color: rgba(232, 234, 237, 1);
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 7;
+  border-radius: 25% 25% 0 0;
+}
 body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
